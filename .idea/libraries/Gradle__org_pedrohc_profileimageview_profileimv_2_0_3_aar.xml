@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.pedrohc.profileimageview:profileimv:2.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cc6118400e67c5f4f7f4cfa5eaa1d711/profileimv-2.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cc6118400e67c5f4f7f4cfa5eaa1d711/profileimv-2.0.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.pedrohc.profileimageview/profileimv/2.0.3/39c42095bba515450b9625699f493537b65d6449/profileimv-2.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.pedrohc.profileimageview/profileimv/2.0.3/9b65f47b9ea1b84f73f6e78bc5e47402e2f0c126/profileimv-2.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

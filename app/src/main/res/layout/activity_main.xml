@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F7ED"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp" />
+
+        <org.pedrohc.profileimageview.ProfileImageView
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            app:mode="selectable"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:image="@drawable/profilepic"
+            app:frame="circle" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/firstNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="First Name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/errorFirstNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:text="Error! First Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#A21B10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/lastNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Last Name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/errorLastNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:text="Error! Last Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#A21B10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodeCCP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36sp"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EE464545"
+                    android:paddingRight="2dp" />
+
+                <TextView
+                    android:id="@+id/errorCountryCodeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Error!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#A21B10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/phoneET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/errorPhoneTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:text="Number be of 10 digit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#A21B10"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:paddingLeft="2dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:text="Gender:" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/errorEmailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:text="Error! Email-ID in form any@any.any"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#A21B10"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/errorPasswordTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:text="Password must contain a-z , A-Z ,0-9 and *-_"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#A21B10"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/confirmPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/errorConfirmPasswordTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:text="Password not matched"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#A21B10"
+            android:visibility="gone" />
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/showPasswordCB"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Show Password" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkBoxTermsAndCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Signup"
+                android:layout_marginRight="26dp"
+                android:textAllCaps="false"
+                android:textColor="#F1F5C8"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/loginpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Instead, Login"
+                android:layout_marginLeft="26dp"
+                android:textAllCaps="false"
+                android:textColor="#F1F5C8"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
